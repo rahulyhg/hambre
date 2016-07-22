@@ -1,0 +1,95 @@
+/* Empty. Add your own CSS if you like */
+
+.image{ 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+
+.image img {
+ background: rgba(0, 0, 0, 0.9); 
+   position: relative; 
+   width: 330px; /* for IE 6 */
+   height: 150px;
+   z-index: -1;
+   opacity: 0.8;
+  
+}
+
+.image h2 { 
+   position: absolute; 
+   width: 100%; 
+   float: left;
+   margin-top: 80px;
+   text-align: center;
+   }
+
+.image h2 span { 
+   color: white; 
+   font: bold 20px/45px Helvetica, Sans-Serif; 
+ 	 text-shadow: 2px 2px #000000;
+
+   padding: 5px; 
+}
+
+ion-popover-view.fit {
+  height: auto;
+}
+
+ion-popover-view.fit ion-content {
+  position: relative;
+}
+
+.platform-android ion-popover-view.fit {
+  margin-top: 10px;
+}
+
+.platform-ios ion-popover-view.fit {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ion-input-select--large,
+.ion-input-select,
+select {
+  -webkit-appearance:none;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0);  
+  border:thin solid #dddddd;
+  font-weight:300;
+  display:inline;
+  vertical-align:middle;
+  color:#333;
+  padding: auto 0;
+  overflow:hidden;
+  box-sizing:border-box;
+
+}
+
+.ion-input-select--large {
+  width:420px;
+  font-size:1.6rem;
+  background-image: url(http://i.imgur.com/7rGM4IX.png);
+  text-indent:40px;
+  padding:1.2rem 0;
+}
+
+.ion-input-select {
+  width:200px;
+  font-size:1rem;
+  background-image: url(http://i.imgur.com/nA9xx1X.png);
+  text-indent:20px;
+  padding:.5rem 0;
+}
+
+option {
+  background:#444;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+:focus {
+  outline:none;
+}

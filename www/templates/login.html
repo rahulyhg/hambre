@@ -1,0 +1,24 @@
+<ion-view view-title="Login" cache-view="false">
+ <ion-content overflow-scroll="false"> 
+ 
+   <div style="margin-top: 30px;">
+
+ <center>  <h5> Inicio de Sesión </h5> </center>
+
+      <div class="list">
+     
+       <label class="item item-input item-stacked-label">
+    <span class="input-label">Email: </span>
+    <input type="text" placeholder="Email" name="usuario" ng-model="usuario">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Contraseña</span>
+    <input type="password" placeholder="Contraseña" name="clave" ng-model="clave">
+  </label>
+
+      </div>
+
+        
+        <div style="padding: 8px;">     <button class="button button-block button-positive" ng-click="login(usuario, clave)">Iniciar Sesion</button>
+
+  </ion-content>

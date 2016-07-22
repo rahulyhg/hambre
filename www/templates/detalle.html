@@ -1,0 +1,49 @@
+<ion-view cache-view="false">
+  
+        <div style="background-color: #d9d9d9;" class="bar bar-header">
+
+<button class="button icon-left ion-chevron-left" ng-click="myGo()"></button>
+ 
+        <h5 class="title"> <span style="text-align: center"> Detalle </span> </h5>
+<!-- {{id_usuario}}  -->
+  <div class="buttons">
+        <button class="button button-icon ion-more" ng-click="popover.show($event)">
+        </button>
+      </div>
+
+   
+
+        <script id="templates/popover.html" type="text/ng-template">
+       <ion-popover-view class="fit">
+        <ion-content>
+          <div class="list">
+
+             <a class="item" href="#/login" ng-click="closePopover()">
+              <span class="ion-log-out"></span> Salir
+            </a>
+          </div>
+        </ion-content>
+      </ion-popover-view>
+    </script>
+</div>
+
+  
+
+  <ion-content ng-init="ver_detalle()">
+           <div style="margin-top: 40px;">
+         <img width="100" height="100" src="{{detalle.post.thumbnail}}" alt=""> <br>
+            
+            {{detalle.post.id}} <br>
+
+           {{detalle.post.title}} <br>
+
+         <span>  {{detalle.post.content | htmlToPlaintext }} </span> <br>
+
+</div>
+      
+
+  </ion-content>
+
+
+</ion-view>
+

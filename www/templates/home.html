@@ -1,0 +1,65 @@
+<ion-view cache-view="false">
+    
+    <div style="background-color: #d9d9d9;" class="bar bar-header">
+
+<!-- <button class="button icon-left ion-chevron-left" ng-click="myGo()"></button>
+ -->
+        <h5 class="title"> <span style="text-align: center"> Categorias </span> </h5>
+   <div class="buttons">
+        <button class="button button-icon ion-more" ng-click="popover.show($event)">
+        </button>
+      </div>
+
+   
+
+          <script id="templates/popover.html" type="text/ng-template">
+       <ion-popover-view class="fit">
+        <ion-content>
+          <div class="list">
+
+            
+             <a class="item" href="#/login" ng-click="closePopover()">
+              <span class="ion-log-out"></span> Salir
+            </a>
+          </div>
+        </ion-content>
+      </ion-popover-view>
+    </script>
+</div>
+     
+  <ion-content overflow-scroll="true" ng-init="load()">
+
+    <div style="margin-top: 40px;">
+
+    <ion-list>
+         <ion-item ng-repeat="item in cakeOptions">
+          
+
+            <div class="image">
+              
+              <a href="#/listar/{{item.id}}">
+              
+                <h2><span>{{item.title}}
+                 </span> </h2>     
+             
+                <img src="{{item.img}}">
+              
+              </a>
+        
+                
+
+            </div>
+        
+
+
+
+
+          </ion-item>
+      
+
+
+    </ion-list>
+    </div>
+  </ion-content>
+</ion-view>
+
